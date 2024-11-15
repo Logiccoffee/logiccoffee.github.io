@@ -359,12 +359,3 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 .features a:hover {
     color: #2fa45b;
 }
-
-/* Footer Section */
-footer {
-    text-align: center;
-    background-color: #0b4128;
-    padding: 15px 0;
-    font-size: 14px;
-    color: #ffffff;
-}
