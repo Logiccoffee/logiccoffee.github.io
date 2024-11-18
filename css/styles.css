@@ -359,3 +359,84 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 .features a:hover {
     color: #2fa45b;
 }
+/* Testimonials Section */
+.testimonials {
+    padding: 30px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 150px; /* Fixed height for uniformity */
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-card cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Newsletter Section */
+.newsletter {
+    padding: 30px 10%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #006e2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #00401a;
+}
+
