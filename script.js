@@ -49,3 +49,5 @@ prevButton.addEventListener('click', () => {
 // Inisialisasi highlight pertama
 updateHighlight();
 window.addEventListener('load', updateHighlight); 
+
+

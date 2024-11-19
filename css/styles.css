@@ -362,16 +362,21 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 .features a:hover {
     color: #2fa45b;
 }
-/* Testimonials Section */
+/* Section Testimonials */
 .testimonials {
-    padding: 30px 10%;
-    background-color: #fff;
+    padding: 40px 10%;
+    background-color: #ffffff; /* Warna hijau gelap */
+    color: #fff; /* Warna teks putih */
     text-align: center;
 }
 
 .testimonials h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #291d00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .testimonial-container {
@@ -381,40 +386,46 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    background-color: #fff; /* Warna latar putih */
+    border: 2px solid #513B1C; /* Border coklat */
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    height: 150px; /* Fixed height for uniformity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #254117; /* Warna teks hijau gelap */
 }
 
 .testimonial-card blockquote {
     font-style: italic;
+    font-size: 16px;
     margin: 0;
+    line-height: 1.5;
 }
 
 .testimonial-card cite {
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 14px;
     font-weight: bold;
+    color: #513B1C; /* Warna coklat */
 }
 
 .testimonial-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Responsive adjustments for Testimonials */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .testimonials {
-        padding: 20px 5%; /* Adjust padding for smaller screens */
+        padding: 30px 5%;
     }
 
     .testimonial-card {
-        height: auto; /* Allow height to adjust based on content */
+        padding: 15px;
     }
 }
+
 
 /* Newsletter Section */
 .newsletter {
@@ -474,56 +485,83 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
 /* About Section Styles */
 .about {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 40px 20px; /* Padding for top/bottom and left/right */
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-content {
-    flex: 1; /* Allow content to take up available space */
-    text-align: justify; /* Justify text */
-    padding: 20px; /* Padding untuk konten */
-    margin: 0 auto; /* Center the content */
-    max-width: 800px; /* Max width untuk konten */
+    flex: 1;
+    text-align: justify;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
 
 .side-image {
-    width: 350px; /* Set a fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and content */
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a modern look */
 }
 
-/* Responsive adjustments */
+/* Division Styles */
+.division-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.division {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgb(63, 38, 0);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.division:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgb(98, 61, 7);
+}
+
+.division h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #472708;
+}
+
+.division p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .about {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-content {
-        padding-left: 0; /* Remove left padding */
-        text-align: center; /* Center text on smaller screens */
+        padding-left: 0;
+        text-align: center;
     }
 
     .side-image {
-        width: 100%; /* Make image responsive */
-        max-width: 300px; /* Set a max width */
-        margin: 20px 0; /* Add margin above and below the image */
+        width: 100%;
+        max-width: 300px;
+        margin: 20px 0;
+    }
+
+    .division-list {
+        grid-template-columns: 1fr;
     }
 }
-
-.about h2 {
-    font-size: 2.5em; /* Larger font for the heading */
-    margin-bottom: 20px; /* Space below the heading */
-}
-
-.about p {
-    font-size: 1.2em; /* Font size for paragraphs */
-    line-height: 1.6; /* Line height for better readability */
-    margin: 10px 0; /* Margin above and below paragraphs */
-    color: #333; /* Dark text color */
-}
-
