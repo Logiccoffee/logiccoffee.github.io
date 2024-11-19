@@ -80,6 +80,9 @@ body {
 .btn-secondary:hover {
     background-color: #2fa45b;
 }
+/* Gaya untuk tombol login */
+
+
 
 /* Hero Image */
 .hero-image {
@@ -102,7 +105,7 @@ body {
 .menu h2 {
     font-size: 32px;
     margin-bottom: 30px;
-    color: #333;
+    color: #4f3b3b;
 }
 
 .menu-container {
