@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .thumbnail {
+            display: flex;
+            gap: 10px;
+        }
+
+        .thumbnail img {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+        }
+
+        .thumbnail img:hover {
+            border-color: #254117;
+        }
+
+        .info-section {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #ff9f00;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .price del {
+            font-size: 1rem;
+            color: #888;
+            margin-left: 10px;
+        }
+
+        .variation {
+            margin-bottom: 15px;
+        }
+
+        .variation label {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .variation div {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .variation button {
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .variation button:hover {
+            border-color: #254117;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .quantity label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .quantity input {
+            width: 50px;
+            text-align: center;
+            font-size: 1rem;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .quantity button {
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .quantity button:hover {
+            border-color: #254117;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .add-to-cart {
+            background-color: #ff9f00;
+        }
+
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+
+        .buy-now {
+            background-color: #e74c3c;
+        }
+
+        .buy-now:hover {
+            background-color: #d62c1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Gambar -->
+        <div class="image-section">
+            <img id="mainImage" src="bg/kopsu.png" alt="Produk Utama">
+            <div class="thumbnail">
+                <img src="bg/kopsu.png" alt="Thumbnail 1" onclick="changeImage(this)">
+                <img src="bg/vanilla_bliss.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                <img src="bg/sm.png" alt="Thumbnail 3" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Bagian Informasi Produk -->
+        <div class="info-section">
+            <div class="product-name" id="productName">Kopi Susu</div>
+            <div class="rating">⭐⭐⭐⭐☆ 4.6 (2,421 Ulasan)</div>
+            <div class="price">
+                Rp16.000 <del>Rp20.000</del>
+            </div>
+
+            <div class="variation">
+                <label>Warna:</label>
+                <div>
+                    <button>Hitam</button>
+                    <button>Putih</button>
+                    <button>Coklat</button>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <label>Jumlah:</label>
+                <button onclick="changeQuantity(-1)">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="changeQuantity(1)">+</button>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart">Masukkan Keranjang</button>
+                <button class="buy-now">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengganti gambar utama
+        function changeImage(thumbnail) {
+            document.getElementById("mainImage").src = thumbnail.src;
+        }
+
+        // Fungsi untuk mengatur jumlah produk
+        function changeQuantity(amount) {
+            const quantityInput = document.getElementById("quantity");
+            let currentQuantity = parseInt(quantityInput.value);
+            currentQuantity += amount;
+            if (currentQuantity < 1) currentQuantity = 1;
+            quantityInput.value = currentQuantity;
+        }
+    </script>
+</body>
+</html>
