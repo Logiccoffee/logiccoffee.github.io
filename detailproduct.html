@@ -5,55 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Produk</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            padding: 20px;
-        }
-        .product-detail {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .product-image img {
-            max-width: 300px;
-            border-radius: 8px;
-        }
-        .product-info {
-            max-width: 500px;
-        }
-        .product-info h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        .product-info p {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-        .product-info .product-price {
-            font-size: 1.5rem;
-            font-weight: bold;
+            background-color: #f9f9f9;
             color: #333;
         }
-        .back-btn {
-            margin-top: 20px;
-            display: inline-block;
-            text-decoration: none;
-            color: white;
-            background-color: #555;
-            padding: 10px 20px;
-            border-radius: 5px;
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
+        .product-detail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-info {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .product-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .product-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .product-info .product-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e85d04;
+        }
+
+        .product-info .order-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background: #0284c7;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info .order-btn:hover {
+            background: #0369a1;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #000000;
+            background-color: #ddd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
         .back-btn:hover {
-            background-color: #333;
+            background-color: #ffffff;
         }
     </style>
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="instagram"
+          ><a href="http://www.instagram.com/logic_coffeee"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          ></span
+        >
+        <span class="openhour"
+          ><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span
+        >
+        <span class="address"
+          ><a href="https://g.co/kgs/3VB5ztr"
+            ><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54,
+            Sarijadi</a
+          ></span
+        >
+      </div>
+   
+      <!-- Top Bar Responsive Mode -->
+      <div class="top-bar-responsive">
+        <span class="address"
+          ><a href="https://g.co/kgs/3VB5ztr"
+            ><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54</a
+          ></span
+        >
+        <span class="openhour"
+          ><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span
+        >
+      </div>
+  
+      <!-- Main Header -->
+      <header class="header">
+        <div class="navbar">
+          <div class="brand">
+            <img
+              src="./bg/logo logic(1).png"
+              alt="Brand Logo"
+              class="brand-logo"
+            />
+            <h1 class="brand-name">Logic Coffee</h1>
+          </div>
+  
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input type="text" placeholder="Cari produk..." />
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+  
+          <nav class="nav-links">
+            <a href="index.html"><i class="fa fa-house"></i> Beranda</a>
+            <a href="https://logiccoffee.github.io/menu/"><i class="fa fa-mug-hot"></i> Menu</a>
+            <a href="tentang.html"><i class="fa-solid fa-info-circle"></i> Tentang Kami</a>
+            <a href="#kontak"><i class="fa-solid fa-phone"></i>Kontak</a>
+            <a href="https://logiccoffee.id.biz.id/login/" class="btn-login">
+                <i class="fa-solid fa-user"></i> Login
+            </a>
+            
+          </nav>
     <div class="container">
         <a href="index.html" class="back-btn">← Back to Menu</a>
         <div class="product-detail">
@@ -63,7 +164,9 @@
             <div class="product-info">
                 <h1 id="product-name">Product Name</h1>
                 <p id="product-description">Product description goes here.</p>
+                <p><strong>About:</strong> <span id="product-about"></span></p>
                 <p class="product-price" id="product-price">Rp. 0</p>
+                <a href="#" id="order-link" class="order-btn">Pesan Sekarang</a>
             </div>
         </div>
     </div>
@@ -73,21 +176,27 @@
         const products = {
             "kopisusu": {
                 name: "Kopi Susu",
-                description: "A delightful mix of coffee and creamy milk.",
+                description: "A delightful mix of rich coffee and creamy milk, perfect for any time of the day.",
+                about: "Kopi susu adalah campuran kopi espresso dan susu segar, sering diberi tambahan gula atau sirup untuk rasa manis.",
                 price: "Rp. 16.000",
-                image: "bg/kopsu.png"
+                image: "bg/kopsu.png",
+                orderLink: "https://wa.me/yourphonenumber?text=Saya%20ingin%20memesan%20Kopi%20Susu"
             },
             "vanillabliss": {
                 name: "Vanilla Bliss",
-                description: "A smooth blend of coffee with a hint of vanilla.",
+                description: "A smooth blend of coffee with a fragrant hint of vanilla.",
+                about: "Minuman ini dibuat dari kopi, susu, dan sirup vanila yang memberikan rasa manis harum.",
                 price: "Rp. 15.000",
-                image: "bg/vanilla_bliss.png"
+                image: "bg/vanilla_bliss.png",
+                orderLink: "https://wa.me/yourphonenumber?text=Saya%20ingin%20memesan%20Vanilla%20Bliss"
             },
             "machastrawberry": {
                 name: "Macha Strawberry",
                 description: "A refreshing combination of matcha and strawberry.",
+                about: "Minuman ini memadukan matcha premium dengan stroberi segar, menciptakan rasa segar yang unik.",
                 price: "Rp. 18.000",
-                image: "bg/sm.png"
+                image: "bg/sm.png",
+                orderLink: "https://wa.me/yourphonenumber?text=Saya%20ingin%20memesan%20Macha%20Strawberry"
             }
         };
 
@@ -98,24 +207,30 @@
         // Ambil elemen untuk detail produk
         const productNameElem = document.getElementById('product-name');
         const productDescriptionElem = document.getElementById('product-description');
+        const productAboutElem = document.getElementById('product-about');
         const productPriceElem = document.getElementById('product-price');
         const productImageElem = document.getElementById('product-image');
+        const orderLinkElem = document.getElementById('order-link');
 
         // Isi data produk berdasarkan query string
         if (products[productKey]) {
             const product = products[productKey];
             productNameElem.textContent = product.name;
             productDescriptionElem.textContent = product.description;
+            productAboutElem.textContent = product.about;
             productPriceElem.textContent = product.price;
             productImageElem.src = product.image;
             productImageElem.alt = product.name;
+            orderLinkElem.href = product.orderLink;
         } else {
             // Jika produk tidak ditemukan
             productNameElem.textContent = "Produk Tidak Ditemukan";
             productDescriptionElem.textContent = "";
+            productAboutElem.textContent = "";
             productPriceElem.textContent = "";
             productImageElem.src = "";
             productImageElem.alt = "";
+            orderLinkElem.style.display = "none";
         }
     </script>
 </body>
