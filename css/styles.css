@@ -228,32 +228,25 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Product Card Styling */
+/* Gaya utama untuk .product-card */
 .product-card {
-        flex: 0 0 20%; /* 5 produk sekaligus */
-        box-sizing: border-box;
-        text-align: center;
-        padding: 10px;
-        margin: 10px; /* Menambahkan jarak antar kartu */
-        border: 1px solid white;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-        background-color: transparent; /* Tidak ada latar belakang saat tidak di-hover */
-
-    
-    
-
+    flex: 0 0 20%; /* Default: 5 produk per baris */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    margin: 10px; /* Menambahkan jarak antar kartu */
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent; /* Tidak ada latar belakang saat tidak di-hover */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
-
 
 .product-card:hover {
     background-color: white; /* Latar belakang putih saat di-hover */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan saat di-hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat di-hover */
     transform: translateY(-5px); /* Efek angkat saat di-hover */
 }
-
-
 
 .product-image img {
     width: 70%;
@@ -267,7 +260,6 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 .product-image img:hover {
     transform: scale(1.05);
 }
-
 
 .product-info h2 {
     font-size: 20px;
@@ -290,19 +282,63 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     color: #a9825c;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #a9825c;
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
     display: inline-block;
     border: 1px solid #a9825c;
-
 }
 
 .read-more:hover {
     background-color: #a9825c;
     color: white;
 }
+
+/* Media Queries untuk Responsif */
+
+/* Tablet (maksimal 768px) */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 0 0 45%; /* 2 produk per baris */
+    }
+
+    .product-info h2 {
+        font-size: 18px;
+    }
+
+    .product-info p {
+        font-size: 13px;
+    }
+
+    .read-more {
+        font-size: 13px;
+    }
+}
+
+/* Smartphone (maksimal 576px) */
+@media (max-width: 576px) {
+    .product-card {
+        flex: 0 0 100%; /* 1 produk per baris */
+    }
+
+    .product-image img {
+        width: 80%; /* Sedikit lebih besar untuk layar kecil */
+    }
+
+    .product-info h2 {
+        font-size: 16px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .read-more {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
 
 /* Button Styling */
 .carousel-btn {
