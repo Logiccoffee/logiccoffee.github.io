@@ -129,11 +129,14 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    height: 250px; /* Ukuran kecil awal */
 }
 
-.activity-card:hover {
-    transform: translateY(-5px);
+.activity-card.expanded {
+    height: auto; /* Ukuran besar setelah klik */
 }
 
 .activity-card img {
@@ -151,8 +154,17 @@ a {
 
 .activity-card p {
     font-size: 16px;
-    padding: 0 20px 20px;
+    padding: 20px;
+    margin: 0;
     line-height: 1.5;
+    height: 60px; /* Menyembunyikan teks lebih banyak */
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.activity-card p.expanded {
+    height: auto;
+    overflow: visible;
 }
 
 /* Divisions Section Styles */
