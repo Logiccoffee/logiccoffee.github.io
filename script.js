@@ -89,3 +89,12 @@ if (productInfo) {
 
 // Example DOM manipulation with element.js
 addClassToElement(track, 'initialized');  // Example if element.js provides a helper like addClassToElement
+
+document.getElementById('heroImage').addEventListener('click', function () {
+    const element = this;
+    element.classList.add('animate__animated', 'animate__wobble');
+    // Hapus kelas animasi setelah selesai untuk dapat diulang
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__animated', 'animate__wobble');
+    });
+});

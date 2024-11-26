@@ -51,6 +51,7 @@ body {
 .hero-content p {
     font-size: 16px;
     margin-bottom: 30px;
+    line-height: 1.5; /* Atur jarak antar baris */
 }
 
 .hero-buttons a {
@@ -90,6 +91,10 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 9px;
+}
+.hero-image:hover {
+    animation-duration: 2s; /* Goyangan berlangsung 2 detik */
+    animation-iteration-count: infinite; /* Animasi berjalan terus-menerus */
 }
 
 /* Menu Section */
