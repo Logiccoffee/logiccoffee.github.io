@@ -93,8 +93,8 @@ body {
     border-radius: 9px;
 }
 .hero-image:hover {
-    animation-duration: 2s; /* Goyangan berlangsung 2 detik */
-    animation-iteration-count: infinite; /* Animasi berjalan terus-menerus */
+   animation-duration: 2s; /* Goyangan berlangsung 2 detik */
+        animation-iteration-count: infinite; /* Animasi berjalan terus-menerus */
 }
 
 /* Menu Section */
@@ -195,15 +195,18 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 /* Carousel Styling */
 .carousel-container {
     position: relative;
-    overflow: hidden;
+   /* overflow: visible; / */
     max-width: 100%;
     margin: 20px auto;
+    gap: 20px; 
+    overflow: visible; /* Agar bayangan tidak terpotong */
 }
 
 
 .carousel-track-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
+    overflow: visible; /* Agar bayangan tidak terpotong */
 }
 
 
@@ -211,6 +214,10 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     transition: transform 0.3s ease-in-out;
     width: fit-content;
+    display: flex;
+    gap: 20px; /* Jarak antar product-card */
+    /* Properti lainnya untuk carousel, jika ada */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
 }
 
 .carousel-item {
@@ -230,14 +237,15 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transform: scale(1.05);
 }
 .product-card {
-    flex: 0 0 20%; /* Default: 5 produk per baris */
+    flex: 0 0 20%;
     box-sizing: border-box;
     text-align: center;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: transparent; /* Tidak ada latar belakang saat tidak di-hover */
+    background-color: transparent;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+   
 }
 .product-card:hover {
     background-color: white; /* Latar belakang putih saat di-hover */
@@ -273,19 +281,22 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .read-more {
-    text-decoration: none;
-    color: #a9825c;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
     display: inline-block;
-    border: 1px solid #a9825c;
+    margin-top: 10px; /* Jarak vertikal dengan elemen atas */
+    margin-bottom: 10px; /* Jarak vertikal dengan elemen bawah */
+    margin-right: 10px; /* Jarak kanan agar tidak terlalu menempel */
+    padding: 8px 16px;
+    background-color: #c9994c; /* Warna tombol */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
 }
 
+
+
 .read-more:hover {
-    background-color: #a9825c;
+    background-color: #a57b32;
     color: white;
 }
 
