@@ -55,6 +55,18 @@ display: none;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.nav-links a {
+    display: flex;
+    align-items: center;  /* Vertically align icon and text */
+    text-decoration: none;  /* Remove default underline */
+    color: inherit;  /* Inherit color from parent */
+    padding: 10px;
+}
+
+.nav-links a i {
+    margin-right: 8px;  /* Add gap between icon and text */
+}
+
 
 /* Logo and Brand Name */
 .brand-logo {
