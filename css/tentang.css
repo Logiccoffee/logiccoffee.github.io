@@ -17,7 +17,7 @@ a {
 
 /* Hero Section Styles */
 .hero {
-    background-color: #ffffff;
+    background-color: #ffffff23;
     padding: 100px 20px;
     color: #fff;
     text-align: center;
@@ -73,7 +73,7 @@ a {
 /* About Section Styles */
 .about {
     padding: 100px 20px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5d8;
 }
 
 .about-container {
@@ -232,7 +232,7 @@ a {
 }
 
 
-/* Q&A Section Styles */
+/* Q&A Section Styles
 .qna {
     padding: 100px 20px;
     background-color: #f5f5f5;
@@ -272,4 +272,195 @@ a {
     font-size: 16px;
     line-height: 1.6;
 }
+ */
 
+ @media (max-width: 1200px) {
+    body {
+        font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mengurangi ukuran font pada layar lebih kecil */
+        padding: 10px; /* Memberikan padding pada body di ponsel */
+    }
+    
+    /* Link Styling for smaller screens */
+    a {
+        font-size: 14px; /* Menyesuaikan ukuran font untuk link */
+    }
+}
+/* Medium Devices (Tablets and smaller screens) */
+@media (max-width: 1200px) {
+    .hero-container {
+        flex-direction: column; /* Stack the elements in a column */
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Reduce font size for h1 */
+    }
+
+    .hero-content p {
+        font-size: 18px; /* Reduce font size for paragraph */
+    }
+
+    .hero-image {
+        flex-basis: 100%; /* Make the image take full width */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 24px; /* Further reduce font size for small screens */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Further reduce font size for paragraph */
+    }
+
+    .hero-image img {
+        width: 90%; /* Reduce the width of the image for small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+/* Medium Devices (Tablets and smaller screens) */
+@media (max-width: 1200px) {
+    .about-container, .activities-container, .divisions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-content, .activity-card, .division-card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .activity-card img, .division-card img {
+        height: 180px;
+    }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .activity-card h3 {
+        font-size: 20px;
+    }
+
+    .activity-card p, .division-card p {
+        font-size: 14px;
+    }
+
+    .activities h2, .divisions h2 {
+        font-size: 30px;
+    }
+}
+
+
+.site-footer {
+    padding: 10px 0; /* Kurangi padding vertikal */
+    font-size: 14px; /* Ukuran font lebih kecil */
+    color: #805700;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    box-shadow: none; /* Menghapus shadow */
+    border: none; /* Menghapus border jika ada */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Mengurangi jarak antar elemen */
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px; /* Mengurangi margin bawah logo */
+}
+
+.footer-intro {
+    font-size: 16px; /* Ukuran font intro lebih kecil */
+    color: #805700;
+    font-weight: 500;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Mengurangi jarak antar link */
+    font-size: 14px; /* Ukuran font lebih kecil */
+    color: #805700;
+}
+
+.footer-links span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links i {
+    font-size: 18px; /* Ukuran ikon lebih kecil */
+}
+
+.footer-content p {
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+    margin-top: 5px; /* Kurangi margin top */
+    font-family: "Signika", Arial, sans-serif;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #805700;
+    font-weight: 500;
+    position: relative;
+    font-size: 16px; /* Ukuran font lebih kecil */
+}
+
+.footer-content a:hover {
+    color: #0e6b37;
+}
+
+.footer-content a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #0e6b37;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.footer-content a:hover::after {
+    width: 100%;
+    left: 0;
+}

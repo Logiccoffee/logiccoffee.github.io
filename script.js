@@ -115,3 +115,36 @@ document.getElementById('heroImage').addEventListener('click', function () {
         element.classList.remove('animate__animated', 'animate__wobble');
     });
 });
+
+function searchProducts() {
+    // Ambil nilai pencarian dari input
+    const query = document.getElementById('search-input').value.toLowerCase();
+ 
+    // Ambil semua elemen yang memiliki class "searchable"
+    const items = document.querySelectorAll('.searchable');
+
+    // Hapus highlight sebelumnya
+    items.forEach(item => {
+        item.classList.remove('highlight');
+    });
+
+    // Variabel untuk menentukan apakah ada hasil pencarian
+    let found = false;
+
+    // Loop untuk mengecek setiap item
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase(); // Ambil teks dari elemen
+        if (text.includes(query)) {
+            item.classList.add('highlight'); // Tambahkan highlight
+            found = true;
+     
+            // Scroll ke elemen yang ditemukan
+            item.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    });
+
+    // Jika tidak ditemukan, beri tahu pengguna
+    if (!found) {
+        alert("Produk tidak ditemukan!");
+    }
+}
