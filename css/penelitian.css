@@ -1,0 +1,45 @@
+.header {
+    background-color: #254117;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.organization-structure {
+    padding: 20px;
+    text-align: center;
+}
+
+.org-chart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.position {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+}
+
+.position h2 {
+    font-size: 18px;
+    color: #254117;
+    margin-bottom: 10px;
+}
+
+.position p,
+.position ul {
+    color: #666;
+    font-size: 14px;
+}
+
+.position ul {
+    list-style: none;
+    padding: 0;
+}

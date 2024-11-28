@@ -120,12 +120,14 @@ body {
 .menu-card img {
     width: 100px;
     height: 100px;
-    border-radius: 80%;
+    border-radius: 50%; /* Tetap bulat */
     background-color: #fefefe;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover; /* Pastikan gambar tidak gepeng */
 }
+
 
 .menu-card:hover img {
     transform: translateY(-10px) scale(1.1);
@@ -409,7 +411,7 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 }
 
-/* Features Section */
+/* Features Section
 .features {
     display: flex;
     justify-content: center;
@@ -523,4 +525,11 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
 .newsletter button:hover {
     background-color: #00401a;
+} */
+.searchable {
+    transition: background-color 0.3s ease;
+}
+.searchable.highlight {
+    background-color: rgb(224, 175, 126);
+    font-weight: bold;
 }
