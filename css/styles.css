@@ -530,6 +530,8 @@ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 .searchable.highlight {
-    background-color: rgb(224, 175, 126);
+    border: 2px solid rgb(224, 175, 126); /* Warna outline */
     font-weight: bold;
+    padding: 2px; /* Menambahkan sedikit jarak antara teks dan kotak */
+    border-radius: 4px; /* Membuat sudut kotak agak melengkung (opsional) */
 }

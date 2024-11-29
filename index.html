@@ -43,379 +43,407 @@
 </head>
 
 <body>
-
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <span class="instagram"><a href="http://www.instagram.com/logic_coffeee"><i class="fa-brands fa-instagram"></i>
-        Instagram</a></span>
-    <span class="openhour"><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span>
-    <span class="address"><a href="https://g.co/kgs/3VB5ztr"><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No.
-        54,
-        Sarijadi</a></span>
+ <!-- Top Bar -->
+ <div class="top-bar">
+    <span class="instagram"
+      ><a href="http://www.instagram.com/logic_coffeee"
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      ></span
+    >
+    <span class="openhour"
+      ><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span
+    >
+    <span class="address"
+      ><a href="https://g.co/kgs/3VB5ztr"
+        ><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54,
+        Sarijadi</a
+      ></span
+    >
   </div>
 
   <!-- Top Bar Responsive Mode -->
   <div class="top-bar-responsive">
-    <span class="address"><a href="https://g.co/kgs/3VB5ztr"><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No.
-        54</a></span>
-    <span class="openhour"><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span>
+    <span class="address"
+      ><a href="https://g.co/kgs/3VB5ztr"
+        ><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54</a
+      ></span
+    >
+    <span class="openhour"
+      ><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span
+    >
   </div>
 
   <!-- Main Header -->
   <header class="header">
     <div class="navbar">
       <div class="brand">
-        <img src="./bg/logo logic(1).png" alt="Brand Logo" class="brand-logo" />
+        <img
+          src="./bg/logo logic(1).png"
+          alt="Brand Logo"
+          class="brand-logo"
+        />
         <h1 class="brand-name" data-jscroot="fade-in">Logic Coffee</h1>
       </div>
 
-      <!-- Search Bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Cari produk..." />
-        <button class="search-button">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
+<input type="text" placeholder="Cari di halaman ini..." id="search-input" />
+<button class="search-button" onclick="searchProducts()">Cari</button>
+</div>
 
+    
       <nav class="nav-links">
         <a href="index.html"><i class="fa fa-house"></i> Beranda</a>
         <a href="#menu"><i class="fa fa-mug-hot"></i> Menu</a>
         <a href="tentang.html"><i class="fa-solid fa-info-circle"></i> Tentang Kami</a>
         <a href="https://logiccoffee.id.biz.id/kontak/"><i class="fa-solid fa-phone"></i>Kontak</a>
         <a href="http://logiccoffee.id.biz.id/auth/login/" class="btn-login">
-          <i class="fa-solid fa-user"></i> Login
+            <i class="fa-solid fa-user"></i> Login
         </a>
-
+        
       </nav>
 
       <!-- Profile and Cart -->
       <!-- <div class="user-cart">
-            <span class="cart-icon">&#128722;<span class="cart-count">0</span></span>
-            <span class="profile">Nama Pengguna &#9662;</span>
-        </div> -->
+        <span class="cart-icon">&#128722;<span class="cart-count">0</span></span>
+        <span class="profile">Nama Pengguna &#9662;</span>
+    </div> -->
     </div>
   </header>
-  <!-- Hero Section -->
-  <section class="hero">
+
+<!-- Hero Section -->
+<section class="hero">
     <div class="hero-container">
-      <div class="hero-content">
-        <h2>Logic Coffee</h2>
-        <h1>Kopinya Mahasiswa</h1>
-        <p data-jscroot="fade-in-up" class="hero-content">
-          <strong>Logic Coffee</strong> adalah salah satu unit kegiatan mahasiswa yang berkedudukan di
-          <strong>Universitas Logistik dan Bisnis Internasional</strong>, yang bergerak pada bidang
-          <strong>kewirausahaan</strong>, <strong>supply chain manajemen</strong>,
-          <strong>bisnis</strong>, dan <strong>seni kopi</strong>.
-          Unit Kegiatan Mahasiswa Kopi <strong>“LOGIC COFFEE”</strong> bersifat <strong>kekeluargaan</strong> yang
-          menjunjung
-          tinggi nilai-nilai <strong>demokratis</strong> dengan melakukan <strong>musyawarah mufakat</strong>.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a href="tentang.html" class="btn-primary" data-jscroot="fade-in">Kenalan Yuk !</a>
+        <div class="hero-content">
+          <h2 class="animate__animated animate__zoomIn">Logic Coffee</h2>
+            <h1 class="animate__animated animate__zoomIn">Kopinya Mahasiswa</h1>
+            <p data-jscroot="fade-in-up" class="hero-content">
+              <strong>Logic Coffee</strong> adalah salah satu unit kegiatan mahasiswa yang berkedudukan di 
+              <strong>Universitas Logistik dan Bisnis Internasional</strong>, yang bergerak pada bidang 
+              <strong>kewirausahaan</strong>, <strong>supply chain manajemen</strong>, 
+              <strong>bisnis</strong>, dan <strong>seni kopi</strong>.
+              Unit Kegiatan Mahasiswa Kopi <strong>“LOGIC COFFEE”</strong> bersifat <strong>kekeluargaan</strong> yang menjunjung 
+              tinggi nilai-nilai <strong>demokratis</strong> dengan melakukan <strong>musyawarah mufakat</strong>.
+          </p>
+          
+            <div class="hero-buttons">
+               
+               <a href="tentang.html" class="btn-primary" data-jscroot="fade-in">Kenalan Yuk !</a>
+            </div>
         </div>
+        <div class="hero-image animate__animated animate__tada">
+          <img src="bg/hero1.png" alt="Green Leaf" />
       </div>
-      <div class="hero-image animate__animated animate__tada">
-        <img src="bg/hero1.png" alt="Green Leaf" />
-      </div>
-
-
-
-    </div>
-  </section>
-
-
-  <section class="menu">
-    <div class="menu-container">
-      <!-- Product 1 -->
-      <div class="menu-card">
-        <img src="bg/noncaffee-removebg-preview.png" alt="Caramel Ribbon">
-        <h3>Signature</h3>
-
-
-      </div>
-      <!-- Product 2 -->
-      <div class="menu-card">
-        <img src="bg/manual.png" alt="Strawberry Funnel">
-        <h3>Manual Brew</h3>
-
-
-      </div>
-      <!-- Product 3 -->
-      <div class="menu-card">
-        <img src="bg/coffee.png" alt="Caramel Frappuccino">
-        <h3>coffee</h3>
-
-
-      </div>
-      <div class="menu-card">
-        <img src="bg/noncoffee.png" alt="Caramel Frappuccino">
-        <h3>Non-Coffee</h3>
-
-
-      </div>
-      <div class="menu-card">
-        <img src="bg/mocktail.png" alt="Caramel Frappuccino">
-        <h3>Mochtail</h3>
-
-
-      </div>
-      <div class="menu-card">
-        <img src="bg/mojito.png" alt="Caramel Frappuccino">
-        <h3>Mojito</h3>
-
-
-      </div>
-    </div>
-  </section>
-  <section class="product-section" id="menu">
-    <h1>Best Seller</h1>
-
-    <div class="carousel-container">
-      <div class="carousel-track-container">
-        <div class="carousel-track">
-          <!-- Product Cards -->
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/kopsu.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">Kopi Susu</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
-              <!-- <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 16.000</p>
-              <a href="detailproduct.html?product=kopisusu" class="read-more">Lihat</a>
-            </div>
-          </div>
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/vanilla_bliss.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">vanilla Bliss</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
-              <!-- <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 15.000</p>
-              <a href="detailproduct.html?product=vanillabliss" class="read-more">Lihat </a>
-            </div>
-          </div>
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/Camarillo.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">Camarillo</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
-              <!-- <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 16.000</p>
-              <a href="detailproduct.html?product=vanillabliss" class="read-more">Lihat</a>
-            </div>
-          </div>
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/berry_dream.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">Berry Dream</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
-              <!-- <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 18.000</p>
-              <a href="#" class="read-more">Lihat</a>
-            </div>
-          </div>
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/Fuji.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">Fuji sunset</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p>
-                            <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 15.000</p>
-              <a href="detailproduct.html?product=vanillablissu" class="read-more">Lihat </a>
-            </div>
-          </div>
-          <div class="product-card" data-jscroot="fade-in-up">
-            <div class="product-image">
-              <img src="bg/vanilla_bliss.png" alt="Coffee">
-            </div>
-            <div class="product-info">
-              <h2 class="searchable">vanilla Bliss</h2>
-              <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p>
-                            <div class="product-rating">
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9733;</span>
-                                <span class="rating-star">&#9734;</span>
-                            </div> -->
-              <p class="product-price">Rp. 15.000</p>
-              <a href="detailproduct.html?product=vanillablissu" class="read-more">Lihat </a>
-            </div>
-          </div>
-          <!-- Add more product cards here -->
-        </div>
-      </div>
-
-      <!-- Add Previous and Next Buttons -->
-      <button class="carousel-btn prev-btn">❮</button> <!-- Previous Button -->
-      <button class="carousel-btn next-btn">❯</button> <!-- Next Button -->
-    </div>
-  </section>
-
-
-
-  <!-- Testimonials Section -->
-  <!-- <section class="testimonials">
-    <h2>Apa Kata Pelanggan Kami?</h2>
-    <div class="testimonial-container">
-        <div class="testimonial-card">
-            <blockquote>
-                "Kopi terbaik di kota ini! Sangat direkomendasikan!"
-            </blockquote>
-            <cite>- Rizki S.</cite>
-        </div>
-        <div class="testimonial-card">
-            <blockquote>
-                "Suasana sempurna untuk belajar atau sekadar bersantai."
-            </blockquote>
-            <cite>- Amanda L.</cite>
-        </div>
-        <div class="testimonial-card">
-            <blockquote>
-                "Kopi mereka selalu segar dan sangat lezat!"
-            </blockquote>
-            <cite>- Dika H.</cite>
-        </div>
-        
+      
+      
+      
     </div>
 </section>
 
 
-    <! Add more testimonials as needed -->
-  </section>
+<section class="menu">
+    <div class="menu-container">
+        <!-- Product 1 -->
+        <div class="menu-card">
+            <img src="bg/noncaffee-removebg-preview.png" alt="Caramel Ribbon">
+            <h3 class="searchable">Signature</h3>
+          
+     
+        </div>
+        <!-- Product 2 -->
+        <div class="menu-card">
+            <img src="bg/manual.png" alt="Strawberry Funnel">
+            <h3 class="searchable">Manual Brew</h3>
+         
 
-  <!-- Newsletter Section -->
-  <!-- Newsletter Section -->
-  <!-- <section class="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Stay updated with our latest offers and news. Enter your email below:</p>
-    <form action="#">
-        <input type="email" placeholder="Your email address" required />
-        <button type="submit">Subscribe</button>
-    </form>
+        </div>
+        <!-- Product 3 -->
+        <div class="menu-card">
+            <img src="bg/coffee.png" alt="Caramel Frappuccino">
+            <h3 class="searchable">coffee</h3>
+        
+  
+        </div>
+        <div class="menu-card">
+            <img src="bg/noncoffee.png" alt="Caramel Frappuccino">
+            <h3 class="searchable">Non-Coffee</h3>
+          
+         
+        </div>
+        <div class="menu-card">
+            <img src="bg/mocktail.png" alt="Caramel Frappuccino">
+            <h3 class="searchable">Mochtail</h3>
+          
+         
+        </div>
+        <div class="menu-card">
+            <img src="bg/mojito.png" alt="Caramel Frappuccino">
+            <h3 class="searchable">Mojito</h3>
+     
+         
+        </div>
+    </div>
+</section>
+<section class="product-section"id="menu">
+    <h1>Best Seller</h1>
+
+    <div class="carousel-container">
+        <div class="carousel-track-container">
+            <div class="carousel-track">
+                <!-- Product Cards -->
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/kopsu.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">Kopi Susu</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
+                        <!-- <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 16.000</p>
+                        <a href="detailproduct.html?product=kopisusu" class="read-more">Lihat</a>
+                    </div>
+                </div>
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/vanilla_bliss.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">vanilla Bliss</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
+                        <!-- <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 15.000</p>
+                        <a href="detailproduct.html?product=vanillabliss" class="read-more">Lihat </a>
+                    </div>
+                </div>
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/Camarillo.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">Camarillo</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
+                        <!-- <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 16.000</p>
+                        <a href="detailproduct.html?product=vanillabliss" class="read-more">Lihat</a>
+                    </div>
+                </div>
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/berry_dream.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">Berry Dream</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p> -->
+                        <!-- <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 18.000</p>
+                        <a href="#" class="read-more">Lihat ></a>
+                    </div>
+                </div>
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/Fuji.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">Fuji sunset</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p>
+                        <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 15.000</p>
+                        <a href="detailproduct.html?product=vanillablissu" class="read-more">Lihat </a>
+                    </div>
+                </div>
+                <div class="product-card" data-jscroot="fade-in-up">
+                    <div class="product-image">
+                        <img src="bg/vanilla_bliss.png" alt="Coffee">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="searchable">vanilla Bliss</h2>
+                        <!-- <p>When cupping coffee the taste of coffee when it enters the mouth.</p>
+                        <div class="product-rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9734;</span>
+                        </div> -->
+                        <p class="product-price">Rp. 15.000</p>
+                        <a href="detailproduct.html?product=vanillablissu" class="read-more">Lihat </a>
+                    </div>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </div>
+
+        <!-- Add Previous and Next Buttons -->
+        <button class="carousel-btn prev-btn">❮</button> <!-- Previous Button -->
+        <button class="carousel-btn next-btn">❯</button> <!-- Next Button -->
+    </div>
+</section>
+
+
+  
+<!-- Testimonials Section -->
+<!-- <section class="testimonials">
+<h2>Apa Kata Pelanggan Kami?</h2>
+<div class="testimonial-container">
+    <div class="testimonial-card">
+        <blockquote>
+            "Kopi terbaik di kota ini! Sangat direkomendasikan!"
+        </blockquote>
+        <cite>- Rizki S.</cite>
+    </div>
+    <div class="testimonial-card">
+        <blockquote>
+            "Suasana sempurna untuk belajar atau sekadar bersantai."
+        </blockquote>
+        <cite>- Amanda L.</cite>
+    </div>
+    <div class="testimonial-card">
+        <blockquote>
+            "Kopi mereka selalu segar dan sangat lezat!"
+        </blockquote>
+        <cite>- Dika H.</cite>
+    </div>
+    
+</div>
+</section>
+
+
+<! Add more testimonials as needed -->
+</section>
+
+<!-- Newsletter Section -->
+<!-- Newsletter Section -->
+<!-- <section class="newsletter">
+<h2>Subscribe to Our Newsletter</h2>
+<p>Stay updated with our latest offers and news. Enter your email below:</p>
+<form action="#">
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe</button>
+</form>
 </section> -->
 
-  <footer class="site-footer" id="kontak">
-    <div class="footer-content">
-      <p class="footer-intro">Kenali lebih dekat dan temui kami di</p>
-      <div class="footer-links">
-        <span class="about searchable">
+
+
+<footer class="site-footer" id="kontak">
+<div class="footer-content">
+  <p class="footer-intro">Kenali lebih dekat dan temui kami di</p>
+  <div class="footer-links">
+      <span class="about searchable">
           <a href="">
-            <i class="fa-solid fa-info-circle"></i> Tentang
+              <i class="fa-solid fa-info-circle"></i> Tentang
           </a>
-        </span>
-        <span class="contact searchable">
+      </span>
+      <span class="contact searchable">
           <a href="https://logiccoffee.id.biz.id/kontak/">
-            <i class="fa-solid fa-phone"></i> Kontak
+              <i class="fa-solid fa-phone"></i> Kontak
           </a>
-        </span>
-        <span class="instagram searchable">
+      </span>
+      <span class="instagram searchable">
           <a href="http://www.instagram.com/logic_coffeee">
-            <i class="fa-brands fa-instagram"></i> Instagram
+              <i class="fa-brands fa-instagram"></i> Instagram
           </a>
-        </span>
-        <span class="address searchable">
+      </span>
+      <span class="address searchable">
           <a href="https://g.co/kgs/3VB5ztr">
-            <i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi
+              <i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi
           </a>
-        </span>
-      </div>
-      <p>Logic Coffee &copy; 2024 All rights reserved.</p>
-    </div>
-  </footer>
+      </span>
+  </div>
+  <p>Logic Coffee &copy; 2024 All rights reserved.</p>
+</div>
+</footer>
 
-  <script type="module" src="script.js"></script>
-  <!-- <script src="script.js"></script> -->
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBPLBY1T1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+ 
 
-    gtag('config', 'G-JPBPLBY1T1');
 
-    function searchProducts() {
-      // Ambil nilai pencarian dari input
-      const query = document.getElementById('search-input').value.toLowerCase();
+<script type="module" src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPBPLBY1T1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-      // Ambil semua elemen yang memiliki class "searchable"
-      const items = document.querySelectorAll('.searchable');
+gtag('config', 'G-JPBPLBY1T1');
 
-      // Hapus highlight sebelumnya
-      items.forEach(item => {
+function searchProducts() {
+    // Ambil nilai pencarian dari input
+    const query = document.getElementById('search-input').value.toLowerCase();
+
+    // Ambil semua elemen yang memiliki class "searchable"
+    const items = document.querySelectorAll('.searchable');
+
+    // Hapus highlight sebelumnya
+    items.forEach(item => {
         item.classList.remove('highlight');
-      });
+    });
 
-      // Variabel untuk menentukan apakah ada hasil pencarian
-      let found = false;
+    // Variabel untuk menentukan apakah ada hasil pencarian
+    let found = false;
 
-      // Loop untuk mengecek setiap item
-      items.forEach(item => {
+    // Loop untuk mengecek setiap item
+    items.forEach(item => {
         const text = item.textContent.toLowerCase(); // Ambil teks dari elemen
         if (text.includes(query)) {
-          item.classList.add('highlight'); // Tambahkan highlight
-          found = true;
+            item.classList.add('highlight'); // Tambahkan highlight
+            found = true;
 
-          // Scroll ke elemen yang ditemukan
-          item.scrollIntoView({ behavior: "smooth", block: "center" });
+            // Scroll ke elemen yang ditemukan
+            item.scrollIntoView({ behavior: "smooth", block: "center" });
         }
-      });
+    });
 
-      // Jika tidak ditemukan, beri tahu pengguna
-      if (!found) {
+    // Jika tidak ditemukan, beri tahu pengguna
+    if (!found) {
         alert("Produk tidak ditemukan!");
-      }
     }
+}
 
-  </script>
+// Tambahkan event listener untuk tombol Enter
+document.getElementById('search-input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        searchProducts(); // Panggil fungsi searchProducts saat Enter ditekan
+    }
+});
+
+
+</script>
+
 
 
 
 
 </body>
-
 </html>
