@@ -14,6 +14,12 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <!-- Tambahkan AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Tambahkan AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
   <!-- google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -141,48 +147,12 @@
 
 
 <section class="menu">
-    <div class="menu-container">
-        <!-- Product 1 -->
-        <div class="menu-card">
-            <img src="bg/noncaffee-removebg-preview.png" alt="Caramel Ribbon">
-            <h3 class="searchable">Signature</h3>
-          
-     
-        </div>
-        <!-- Product 2 -->
-        <div class="menu-card">
-            <img src="bg/manual.png" alt="Strawberry Funnel">
-            <h3 class="searchable">Manual Brew</h3>
-         
-
-        </div>
-        <!-- Product 3 -->
-        <div class="menu-card">
-            <img src="bg/coffee.png" alt="Caramel Frappuccino">
-            <h3 class="searchable">coffee</h3>
-        
-  
-        </div>
-        <div class="menu-card">
-            <img src="bg/noncoffee.png" alt="Caramel Frappuccino">
-            <h3 class="searchable">Non-Coffee</h3>
-          
-         
-        </div>
-        <div class="menu-card">
-            <img src="bg/mocktail.png" alt="Caramel Frappuccino">
-            <h3 class="searchable">Mochtail</h3>
-          
-         
-        </div>
-        <div class="menu-card">
-            <img src="bg/mojito.png" alt="Caramel Frappuccino">
-            <h3 class="searchable">Mojito</h3>
-     
-         
-        </div>
+    <div class="menu-container" id="menu-container">
+        <!-- Elemen menu akan dihasilkan secara dinamis di sini -->
     </div>
 </section>
+
+
 <section class="product-section"id="menu">
     <h1>Best Seller</h1>
 
@@ -438,12 +408,9 @@ document.getElementById('search-input').addEventListener('keypress', function(ev
     }
 });
 
+  
 
 </script>
-
-
-
-
 
 </body>
 </html>
