@@ -28,7 +28,7 @@
 .footer-intro {
     font-size: 18px;
     color: #805700;
-    font-weight: medium;
+    font-weight: 500; /* Changed to medium weight */
     margin: 5px 0;
     font-family: Arial, sans-serif;
 }
@@ -38,6 +38,7 @@
     gap: 15px;
     font-size: 16px;
     color: #805700;
+    justify-content: center; /* Ensures center alignment on large and small screens */
 }
 
 .footer-links span {
@@ -47,8 +48,12 @@
 }
 
 .footer-links i {
-    font-size: 18px;
-    /* Larger icon size */
+    font-size: 18px; /* Larger icon size */
+    transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.footer-links i:hover {
+    transform: scale(1.1); /* Enlarges icon slightly on hover */
 }
 
 .footer-content p {
@@ -59,13 +64,11 @@
     font-family: "Signika", Arial, sans-serif;
 }
 
-
 .footer-content a {
     text-decoration: none;
     color: #805700;
     font-weight: 500;
     position: relative;
-    text-decoration: none;
     font-size: 18px;
 }
 
@@ -88,4 +91,12 @@
 .footer-content a:hover::after {
     width: 100%;
     left: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Stack the links vertically on smaller screens */
+        gap: 10px;
+    }
 }
