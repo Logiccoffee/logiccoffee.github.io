@@ -37,14 +37,14 @@ a {
 }
 .hero-content h1 {
     font-family: 'Signika', sans-serif;  /* Font Signika */
-    font-size: 36px;
+    font-size: 70px;
     margin-bottom: 10px;
     color: #09431f /* Green color */
 }
 
 .hero-content p {
     font-family: 'Poppins', sans-serif;  /* Font Poppins */
-    font-size: 20px;
+    font-size: 35px;
     color: #09431f;  /* Green color */
 }
 
@@ -274,105 +274,238 @@ a {
 }
  */
 
- @media (max-width: 1200px) {
-    body {
-        font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
-    }
-}
-
-/* Small Devices (Mobile) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Mengurangi ukuran font pada layar lebih kecil */
-        padding: 10px; /* Memberikan padding pada body di ponsel */
+ @media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
-    /* Link Styling for smaller screens */
-    a {
-        font-size: 14px; /* Menyesuaikan ukuran font untuk link */
+    
+    body {
+        color: #333;
+        background-color: #fff;
     }
-}
-/* Medium Devices (Tablets and smaller screens) */
-@media (max-width: 1200px) {
-    .hero-container {
-        flex-direction: column; /* Stack the elements in a column */
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .hero {
+        background-color: #ffffff23;
+        padding: 100px 20px;
+        color: #fff;
         text-align: center;
     }
-
-    .hero-content h1 {
-        font-size: 28px; /* Reduce font size for h1 */
-    }
-
-    .hero-content p {
-        font-size: 18px; /* Reduce font size for paragraph */
-    }
-
-    .hero-image {
-        flex-basis: 100%; /* Make the image take full width */
-        margin-bottom: 20px; /* Add some space below the image */
-    }
-}
-
-/* Small Devices (Mobile) */
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 24px; /* Further reduce font size for small screens */
-    }
-
-    .hero-content p {
-        font-size: 16px; /* Further reduce font size for paragraph */
-    }
-
-    .hero-image img {
-        width: 90%; /* Reduce the width of the image for small screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-/* Medium Devices (Tablets and smaller screens) */
-@media (max-width: 1200px) {
-    .about-container, .activities-container, .divisions-container {
-        flex-direction: column;
+    
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
-
-    .about-image, .about-content, .activity-card, .division-card {
-        flex-basis: 100%;
-        margin-bottom: 20px;
+    
+    .hero-content {
+        flex: 1;
+        text-align: left;  /* Align text to the left */
     }
-
+    .hero-content h1 {
+        font-family: 'Signika', sans-serif;  /* Font Signika */
+        font-size: 70px;
+        margin-bottom: 10px;
+        color: #09431f /* Green color */
+    }
+    
+    .hero-content p {
+        font-family: 'Poppins', sans-serif;  /* Font Poppins */
+        font-size: 35px;
+        color: #09431f;  /* Green color */
+    }
+    
+    
+    .hero-image {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Menyembunyikan elemen yang keluar */
+        border-radius: 50%; /* Pastikan elemen container juga berbentuk bulat */
+        position: relative; /* Membantu bayangan muncul lebih baik */
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Gambar akan tetap terpotong agar memenuhi kontainer */
+        border-radius: 50%; /* Membuat gambar berbentuk bulat */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Menambahkan bayangan yang lebih besar dan lebih gelap */
+    }
+    
+    
+    
+    
+    /* About Section Styles */
+    .about {
+        padding: 100px 20px;
+        background-color: #f5f5f5d8;
+    }
+    
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about-image {
+        flex-basis: 50%;
+    }
+    
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
     .about-content {
-        padding-left: 0;
-        text-align: center;
+        flex-basis: 50%;
+        padding-left: 40px;
     }
-
-    .activity-card img, .division-card img {
-        height: 180px;
-    }
-}
-
-/* Small Devices (Mobile) */
-@media (max-width: 768px) {
+    
     .about-content h2 {
-        font-size: 28px;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #805700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
-
+    
     .about-content p {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
     }
-
+    
+    /* Activities Section Styles */
+    .activities {
+        padding: 100px 20px;
+        background-color: #fff;
+    }
+    
+    .activities h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #805700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .activities-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .activity-card {
+        flex-basis: 30%;
+        background-color: #f5f5f5;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+        height: 250px; /* Ukuran kecil awal */
+    }
+    
+    .activity-card.expanded {
+        height: auto; /* Ukuran besar setelah klik */
+    }
+    
+    .activity-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
     .activity-card h3 {
-        font-size: 20px;
+        font-size: 24px;
+        padding: 20px;
+        color: #09431f;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
-
-    .activity-card p, .division-card p {
-        font-size: 14px;
+    
+    .activity-card p {
+        font-size: 16px;
+        padding: 20px;
+        margin: 0;
+        line-height: 1.5;
+        height: 60px; /* Menyembunyikan teks lebih banyak */
+        overflow: hidden;
+        transition: all 0.3s ease;
     }
-
-    .activities h2, .divisions h2 {
-        font-size: 30px;
+    
+    .activity-card p.expanded {
+        height: auto;
+        overflow: visible;
     }
-}
-
+    
+    /* Divisions Section Styles */
+    .divisions {
+        padding: 100px 20px;
+        background-color: #f5f5f5;
+    }
+    
+    .divisions h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #805700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .divisions-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .division-card {
+        flex-basis: 30%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .division-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .division-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .division-card h3 {
+        font-size: 24px;
+        padding: 20px;
+        color: #09431f;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .division-card p {
+        font-size: 16px;
+        padding: 0 20px 20px;
+        line-height: 1.5;
+    }
 
 .site-footer {
     padding: 10px 0; /* Kurangi padding vertikal */
@@ -464,3 +597,4 @@ a {
     width: 100%;
     left: 0;
 }
+ }
