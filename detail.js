@@ -1,7 +1,3 @@
-import { postJSON } from 'https://cdn.jsdelivr.net/gh/jscroot/lib@0.0.4/api.js';  // Path API eksternal
-import { onClick } from 'https://cdn.jsdelivr.net/gh/jscroot/lib@0.0.4/element.js';  // Path element.js eksternal
-
-// Data Produk
 const products = {
     "kopisusu": {
         name: "Kopi Susu",
@@ -25,6 +21,22 @@ const products = {
         about: "Minuman ini memadukan matcha premium dengan stroberi segar, menciptakan rasa segar yang unik.",
         price: "Rp. 18.000",
         image: "bg/sm.png",
+        orderLink: "https://logiccoffee.github.io/menu/"
+    },
+    "camarillo": {
+        name: "Camarillo",
+        description: "A rich and smooth coffee blended with caramel and milk, a perfect treat for caramel lovers.",
+        about: "Camarillo adalah perpaduan kopi yang kaya dengan karamel manis dan susu, menciptakan rasa lembut dan gurih.",
+        price: "Rp. 17.000",
+        image: "bg/camarillo.png",
+        orderLink: "https://logiccoffee.github.io/menu/"
+    },
+    "berrydream": {
+        name: "Berry Dream",
+        description: "A fruity fusion of berries and coffee, perfect for a refreshing treat.",
+        about: "Berry Dream adalah kombinasi kopi dengan campuran buah beri yang segar, menawarkan rasa manis dan asam yang seimbang.",
+        price: "Rp. 19.000",
+        image: "bg/berrydream.png",
         orderLink: "https://logiccoffee.github.io/menu/"
     }
 };
