@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #09431f;
+    padding: 100px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    flex-basis: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.hero-image {
+    flex-basis: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styles */
+.about {
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    flex-basis: 50%;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex-basis: 50%;
+    padding-left: 40px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #805700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Activities Section Styles */
+.activities {
+    padding: 100px 20px;
+    background-color: #fff;
+}
+
+.activities h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #805700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.activities-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity-card {
+    flex-basis: 30%;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-card h3 {
+    font-size: 24px;
+    padding: 20px;
+    color: #09431f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card p {
+    font-size: 16px;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+/* Divisions Section Styles */
+.divisions {
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+}
+
+.divisions h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #805700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.divisions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.division-card {
+    flex-basis: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.division-card:hover {
+    transform: translateY(-5px);
+}
+
+.division-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.division-card h3 {
+    font-size: 24px;
+    padding: 20px;
+    color: #09431f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.division-card p {
+    font-size: 16px;
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
+
+/* Q&A Section Styles */
+.qna {
+    padding: 100px 20px;
+    background-color: #f5f5f5;
+}
+
+.qna h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #805700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.qna-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.qna-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.qna-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #09431f;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.qna-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+

@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #d48309;
+    color: #805700;
     background-color: #ffffff;
     box-sizing: border-box;
     
@@ -633,5 +633,3 @@ flex-wrap: wrap; /* Pastikan elemen tidak keluar jika layar kecil */
         
     
 }
-
-
