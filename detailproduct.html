@@ -15,131 +15,131 @@
 
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .product-detail {
-            display: flex;
-            flex-wrap: wrap; /* Membuat elemen responsif */
-            gap: 20px;
-            align-items: flex-start;
-            justify-content: flex-start; /* Menyusun elemen ke arah kiri */
-        }
-        
-        .product-image {
-            flex: 1 1 40%; /* Mengatur gambar mengambil 40% ruang */
-            max-width: 400px; /* Membatasi ukuran maksimal gambar */
-        }
-        
-        .product-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        
-        .product-info {
-            flex: 1 1 55%; /* Mengatur teks mengambil 55% ruang */
-            display: flex;
-            flex-direction: column;
-            padding: 0 20px;
-        }
-        
-        .product-info h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #444;
-        }
-        
-        .product-info p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        .product-info .product-price {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #e85d04;
-        }
-        
-        .product-info .order-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            color: white;
-            background: #13570d;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .product-info .order-btn:hover {
-            background: #0369a1;
-        }
-        
-        .back-btn {
-            display: inline-block;
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: #000000;
-            background-color: #ddd;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        
-        .back-btn:hover {
-            background-color: #ffffff;
-        }
-        
-        /* Media Queries for smaller screens, such as tablets */
-        @media (max-width: 768px) {
-            .product-detail {
-                flex-direction: column; /* Susun gambar dan teks vertikal */
-            }
-        
-            .product-image {
-                flex: 1 1 100%;
-            }
-        
-            .product-info {
-                flex: 1 1 100%;
-                max-width: 100%;
-                padding: 0;
-            }
-        }
-        
-        /* Media Queries for smaller screens, such as mobile */
-        @media (max-width: 480px) {
-            .product-detail {
-                flex-direction: column; /* Susun vertikal untuk layar lebih kecil */
-            }
-        
-            .product-image img {
-                max-width: 100%;
-            }
-        
-            .product-info {
-                padding: 10px;
-            }
-        }
-        
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap; /* Membuat elemen responsif */
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start; /* Menyusun elemen ke arah kiri */
+}
+
+.product-image {
+    flex: 1 1 40%; /* Mengatur gambar mengambil 40% ruang */
+    max-width: 400px; /* Membatasi ukuran maksimal gambar */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-info {
+    flex: 1 1 55%; /* Mengatur teks mengambil 55% ruang */
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.product-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.product-info .product-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e85d04;
+}
+
+.product-info .order-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: #13570d;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info .order-btn:hover {
+    background: #0369a1;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Media Queries for smaller screens, such as tablets */
+@media (max-width: 768px) {
+    .product-detail {
+        flex-direction: column; /* Susun gambar dan teks vertikal */
+    }
+
+    .product-image {
+        flex: 1 1 100%;
+    }
+
+    .product-info {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* Media Queries for smaller screens, such as mobile */
+@media (max-width: 480px) {
+    .product-detail {
+        flex-direction: column; /* Susun vertikal untuk layar lebih kecil */
+    }
+
+    .product-image img {
+        max-width: 100%;
+    }
+
+    .product-info {
+        padding: 10px;
+    }
+}
+
   </style>
 </head>
 <body>
@@ -201,5 +201,33 @@
             </div>
         </div>
     </div>
+    <footer class="site-footer" id="kontak">
+        <div class="footer-content">
+          <p class="footer-intro">Kenali lebih dekat dan temui kami di</p>
+          <div class="footer-links">
+              <span class="about searchable">
+                  <a href="">
+                      <i class="fa-solid fa-info-circle"></i> Tentang
+                  </a>
+              </span>
+              <span class="contact searchable">
+                  <a href="https://logiccoffee.id.biz.id/kontak/">
+                      <i class="fa-solid fa-phone"></i> Kontak
+                  </a>
+              </span>
+              <span class="instagram searchable">
+                  <a href="http://www.instagram.com/logic_coffeee">
+                      <i class="fa-brands fa-instagram"></i> Instagram
+                  </a>
+              </span>
+              <span class="address searchable">
+                  <a href="https://g.co/kgs/3VB5ztr">
+                      <i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi
+                  </a>
+              </span>
+          </div>
+          <p>Logic Coffee &copy; 2024 All rights reserved.</p>
+        </div>
+        </footer>
 </body>
 </html>
