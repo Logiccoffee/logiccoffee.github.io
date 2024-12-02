@@ -111,6 +111,7 @@ a {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 30px;
+    text-align: justify; /* Teks rata kanan-kiri */
 }
 
 /* Activities Section Styles */
@@ -230,6 +231,8 @@ a {
     padding: 0 20px 20px;
     line-height: 1.5;
 }
+
+
 
 
 /* Q&A Section Styles
@@ -353,15 +356,15 @@ a {
     }
     
     .about-container {
-        max-width:1000px;
+        max-width: 1000px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column; /* Layout vertikal */
         align-items: center;
     }
     
     .about-image {
-        flex-basis: 50%;
+        margin-bottom: 20px; /* Jarak antara gambar dan teks */
     }
     
     .about-image img {
@@ -372,22 +375,25 @@ a {
     }
     
     .about-content {
-        flex-basis: 50%;
-        padding-left: 40px;
+        padding: 0; /* Hilangkan padding kiri */
+        text-align: justify; /* Teks rata kanan-kiri */
     }
     
     .about-content h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 24px; /* Ukuran teks lebih besar agar lebih proporsional */
+        margin-bottom: 15px;
         color: #805700;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Judul tetap di tengah */
     }
     
     .about-content p {
-        font-size: 9px;
+        font-size: 14px; /* Ukuran teks lebih besar agar mudah dibaca */
         line-height: 1.6;
         margin-bottom: 30px;
+        text-align: justify; /* Teks rata kanan-kiri */
     }
+    
     
     /* Activities Section Styles */
     .activities {
@@ -407,18 +413,17 @@ a {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column; /* Menyusun elemen secara vertikal */
+        gap: 20px; /* Memberikan jarak antara kartu aktivitas */
     }
     
     .activity-card {
-        flex-basis: 30%;
         background-color: #f5f5f5;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin-bottom: 20px;
         height: 250px; /* Ukuran kecil awal */
     }
     
@@ -433,14 +438,14 @@ a {
     }
     
     .activity-card h3 {
-        font-size: 24px;
+        font-size: 19px;
         padding: 20px;
         color: #09431f;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
     
     .activity-card p {
-        font-size: 16px;
+        font-size: 9px;
         padding: 20px;
         margin: 0;
         line-height: 1.5;
@@ -472,11 +477,11 @@ a {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column; /* Menyusun elemen secara vertikal */
+        gap: 20px; /* Memberikan jarak antar kartu divisi */
     }
     
     .division-card {
-        flex-basis: 30%;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
@@ -490,7 +495,7 @@ a {
     
     .division-card img {
         width: 100%;
-        height: 0px;
+        height: 200px; /* Menetapkan tinggi gambar */
         object-fit: cover;
     }
     
@@ -506,95 +511,5 @@ a {
         padding: 0 20px 20px;
         line-height: 1.5;
     }
-
-.site-footer {
-    padding: 10px 0; /* Kurangi padding vertikal */
-    font-size: 14px; /* Ukuran font lebih kecil */
-    color: #805700;
-    background-color: #ffffff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    text-align: center;
-    box-shadow: none; /* Menghapus shadow */
-    border: none; /* Menghapus border jika ada */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Mengurangi jarak antar elemen */
-}
-
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px; /* Mengurangi margin bawah logo */
-}
-
-.footer-intro {
-    font-size: 16px; /* Ukuran font intro lebih kecil */
-    color: #805700;
-    font-weight: 500;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Mengurangi jarak antar link */
-    font-size: 14px; /* Ukuran font lebih kecil */
-    color: #805700;
-}
-
-.footer-links span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.footer-links i {
-    font-size: 18px; /* Ukuran ikon lebih kecil */
-}
-
-.footer-content p {
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.4;
-    margin-top: 5px; /* Kurangi margin top */
-    font-family: "Signika", Arial, sans-serif;
-}
-
-.footer-content a {
-    text-decoration: none;
-    color: #805700;
-    font-weight: 500;
-    position: relative;
-    font-size: 16px; /* Ukuran font lebih kecil */
-}
-
-.footer-content a:hover {
-    color: #0e6b37;
-}
-
-.footer-content a::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #0e6b37;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
-
-.footer-content a:hover::after {
-    width: 100%;
-    left: 0;
-}
+    
  }
