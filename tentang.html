@@ -86,7 +86,7 @@
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
-  
+          <div class="hamburger" onclick="toggleMenu()" style="display: none;">☰</div>
           <nav class="nav-links">
             <a href="index.html"><i class="fa fa-house"></i> Beranda</a>
             <!-- <a href="https://logiccoffee.github.io/menu/"><i class="fa fa-mug-hot"></i> Menu</a> -->
@@ -256,7 +256,22 @@
             card.classList.add("expanded");
         }
     }
-    
+     // Ambil elemen hamburger dan nav-links
+     function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      const searchBar = document.querySelector('.search-bar');
+
+      navLinks.classList.toggle('active');
+
+      if (window.innerWidth <= 768) {
+        const searchBarInNav = navLinks.querySelector('.search-bar');
+        if (!searchBarInNav) {
+          navLinks.prepend(searchBar); // Pindahkan search bar ke dalam menu pop-up
+        }
+      }
+    }
+
+
   </script>
   
 
