@@ -93,10 +93,8 @@
     left: 0;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .footer-links {
-        flex-direction: column; /* Stack the links vertically on smaller screens */
-        gap: 10px;
+    .product-section {
+        padding: 50px 20px;
     }
 }

@@ -9,7 +9,8 @@ body {
     font-family: Arial, sans-serif;
     color: #d48309;
     background-color: #ffffff;
-    box-sizing: border-box;box-sizing: border-box;
+    box-sizing: border-box;
+    
 }
 
 /* Hero Section */
@@ -179,8 +180,9 @@ body {
     text-align: center;
     border-radius: 1px;
 
+
 flex-wrap: wrap; /* Pastikan elemen tidak keluar jika layar kecil */
-max-width: 1200px;
+
 
 }
 
@@ -192,7 +194,7 @@ max-width: 1200px;
     margin-bottom: 30px;
     color: #4a3c31;
     text-transform: uppercase;
-    max-width: 1200px;
+    text-align: center;
 }
 
 /* Category Tabs Styling */
@@ -221,32 +223,35 @@ max-width: 1200px;
 
 /* Carousel Styling */
 .carousel-container {
-    position: relative;
-   /* overflow: visible; / */
-    max-width: 100%;
-    margin: 20px auto;
-    gap: 20px; 
-    overflow: visible; /* Agar bayangan tidak terpotong */
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    align-items: center; /* (Opsional) Pusatkan secara vertikal jika perlu */
+    max-width: 100%; /* Gunakan lebar penuh */
+    /* margin: 20px auto; Pusatkan container pada halaman */
+    gap: 20px; /* Jarak antar elemen */
+    text-align: center;
 }
+
 
 
 .carousel-track-container {
-    /* overflow: hidden; */
-    width: 100%;
-    overflow: visible; /* Agar bayangan tidak terpotong */
+    display: flex; /* Mengaktifkan Flexbox */
+    justify-content: center; /* Pusatkan elemen di dalam track */
+    align-items: center; /* Pusatkan secara vertikal */
+    overflow: visible; /* Hindari potongan bayangan */
+    width: 100%; /* Pastikan lebar penuh */
+    max-width: 1200px; /* Lebar maksimum */
+    text-align: center; /* Pusatkan teks */
 }
-
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-    width: fit-content;
-    display: flex;
-    gap: 20px; /* Jarak antar product-card */
-    /* Properti lainnya untuk carousel, jika ada */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    max-width: 1200px;
+    display: flex; /* Gunakan Flexbox */
+    justify-content: center; /* Pusatkan cards di dalam track */
+    gap: 40px; /* Tambahkan jarak antar cards */
+    flex-wrap: nowrap; /* Hindari wrapping elemen */
+    width: fit-content; /* Gunakan ukuran sesuai konten */
 }
+
 
 .carousel-item {
     flex: 0 0 20%; /* Default 5 items per row */
@@ -259,22 +264,26 @@ max-width: 1200px;
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .carousel-item img:hover {
     transform: scale(1.05);
 }
 .product-card {
-    flex: 0 0 20%;
-    box-sizing: border-box;
-    text-align: center;
-    border: 1px solid white;
+    display: flex; /* Flexbox untuk isi card */
+    flex-direction: column; /* Tata isi secara vertikal */
+    align-items: center; /* Pusatkan konten di tengah */
+    justify-content: center; /* Pusatkan secara vertikal */
+    flex: 0 0 auto; /* Gunakan ukuran default */
+    max-width: 200px; /* Batasi ukuran maksimal card */
+    text-align: center; /* Pusatkan teks di dalam card */
+    background-color: white; /* (Opsional) Tambahkan background */
     border-radius: 10px;
-    background-color: transparent;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    max-width: 200px;
 }
+
 .product-card:hover {
     background-color: white; /* Latar belakang putih saat di-hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat di-hover */
@@ -358,16 +367,16 @@ max-width: 1200px;
 
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
-
         .product-card {
         flex: 0 0 33.33%; /* Default: 5 produk per baris */
         box-sizing: border-box;
         text-align: center;
-        border: 1px solid white;
-        border-radius: 10px;
+        border: 0px solid white;
+        border-radius: 1px;
         background-color: transparent; /* Tidak ada latar belakang saat tidak di-hover */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
+        max-width: 1200px;
     }
         .hero-image {
             flex: 1;
@@ -428,32 +437,201 @@ max-width: 1200px;
         .btn-secondary:hover {
             background-color: #2fa45b;
         }
-    .carousel-item {
-        flex: 0 0 25%; /* 4 items per row */
-    }
+        .carousel-container {
+            position: relative;
+            max-width: 1200px;
+           /* overflow: visible; / */
+        
+            margin: 20px auto;
+            gap: 20px; 
+            overflow: visible; /* Agar bayangan tidak terpotong */
+            max-width: 1200px;
+        }
+        
+        
+        .carousel-track-container {
+            /* overflow: hidden; */
+            width: 100%;
+            overflow: visible; /* Agar bayangan tidak terpotong */
+            max-width: 1px;
+        }
+        
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            width: fit-content;
+            display: flex;
+            gap: 20px; /* Jarak antar product-card */
+            /* Properti lainnya untuk carousel, jika ada */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            max-width: 1200px;
+        }
+        
+        .carousel-item {
+            flex: 0 0 0%; /* Default 5 items per row */
+            margin: 0 10px;
+            text-align: center;
+            box-sizing: border-box;
+            max-width: 1200px;
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .carousel-item img:hover {
+            transform: scale(1.05);
+        }
+        .product-card {
+            flex: 0 0 9%;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: transparent;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            max-width: 100px;
+        }
+        .product-card:hover {
+            background-color: white; /* Latar belakang putih saat di-hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan saat di-hover */
+            transform: translateY(-5px); /* Efek angkat saat di-hover */
+        }
+        .product-image img {
+            width: 70%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .product-image img:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-info h2 {
+            font-size: 10px;
+            font-weight: bold;
+            color: #4a3c31;
+            margin: 10px 0;
+            text-transform: capitalize;
+        }
+        
+        .product-info p {
+            font-size: 9px;
+            color: #7d6e64;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 10px; /* Jarak vertikal dengan elemen atas */
+            margin-bottom: 5px; /* Jarak vertikal dengan elemen bawah */
+            margin-right:5px; /* Jarak kanan agar tidak terlalu menempel */
+            padding: 8px 16px;
+            background-color: #c9994c; /* Warna tombol */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        
+        
+        .read-more:hover {
+            background-color: #a57b32;
+            color: white;
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4a3c31;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+        }
+        
+        .prev-btn {
+            left: 10px;
+        }
+        
+        .next-btn {
+            right: 10px;
+        }
+        
+        .carousel-btn:hover {
+            background: #a9825c;
+        }
 
-    .product-section {
-        padding: 5px 7px;
-        text-align: center;
-    }
+        .menu {
+            position: relative;
+            padding: 15px 5%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        
+        .menu h2 {
+            position: relative;
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #4f3b3b;
+        }
+        
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .menu-card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%; /* Tetap bulat */
+            background-color: #fefefe;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            object-fit: cover; /* Pastikan gambar tidak gepeng */
+        }
+        
+        
+        .menu-card:hover img {
+            transform: translateY(-10px) scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .menu-card h3 {
+            font-size: 9px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        
+        .menu-card .rating {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        
+        .menu-card p {
+            font-size: 8px;
+            color: #2fa45b;
+            font-weight: bold;
+        }
 
-    .product-section h1 {
-        font-size: 11px;
-    }
-
-
-    .product-info h2 {
-        font-size: 18px;
-    }
-
-    .product-info p {
-        font-size: 13px;
-    }
-
-    .read-more {
-        font-size: 13px;
-        padding: 5px 10px;
-    }
+        
+    
 }
 
 
