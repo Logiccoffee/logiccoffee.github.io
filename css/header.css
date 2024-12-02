@@ -75,6 +75,36 @@
     position: relative !important;
     padding: 0 20px;
 }
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #805700;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    gap: 50%;   
+}
+
+/* Nav Link */
+/* nav .nav-links a {
+    padding: 8px 12px;
+    margin: 0;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+    width: auto;
+    height: auto;
+} */
+
 
 /* Logo and Brand Name */
 .brand-logo {
@@ -86,7 +116,7 @@
 .brand-name {
     font-weight: bold;
     color: #09431f;
-    font-family: "Signika", sans-serif;
+    font-family: "Signika", sans-serif !important;
     font-size: 2em;
 }
 
@@ -101,22 +131,21 @@
 }
 
 /* Navigation Links */
-.nav-links {
+/* .nav-links {
     display: flex;
     gap: 10px;
     font-family: "Signika", sans-serif;
     flex-wrap: wrap;
-}
+}*
 
 .nav-links a {
     display: flex;
-    align-items: left;  /* Vertically align icon and text */
-    text-decoration: none;  /* Remove default underline */
-    color: inherit;  /* Inherit color from parent */
+    align-items: left; 
+    text-decoration: none;
+    color: inherit;  
     padding: 10px;
     gap: 10px;
-}
-
+}*/
 
 .nav-links a:hover {
     color: #09431f;
@@ -332,6 +361,27 @@
         position: relative;
         justify-content: flex-start;
     }
+
+    /* Navbar Styles */
+.navbar {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    padding-right: 40px;
+}
+
+.navbar a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #807500;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
     /* Center align brand logo and name */
     .brand {
