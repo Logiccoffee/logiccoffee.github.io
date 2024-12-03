@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,182 +11,207 @@
     <script src="https://cdn.jsdelivr.net/gh/jscroot/lib@0.0.4/api.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/jscroot/lib@0.0.4/element.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
+    rel="stylesheet" />
 
     <script type="module" src="detail.js"></script> <!-- Menghubungkan dengan script.js -->
 
     <style>
         body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.product-detail {
-    display: flex;
-    flex-wrap: wrap; /* Membuat elemen responsif */
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: flex-start; /* Menyusun elemen ke arah kiri */
-}
+        .product-detail {
+            display: flex;
+            flex-wrap: wrap;
+            /* Membuat elemen responsif */
+            gap: 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            /* Menyusun elemen ke arah kiri */
+        }
 
-.product-image {
-    flex: 1 1 40%; /* Mengatur gambar mengambil 40% ruang */
-    max-width: 400px; /* Membatasi ukuran maksimal gambar */
-}
+        .product-image {
+            flex: 1 1 40%;
+            /* Mengatur gambar mengambil 40% ruang */
+            max-width: 400px;
+            /* Membatasi ukuran maksimal gambar */
+        }
 
-.product-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-.product-info {
-    flex: 1 1 55%; /* Mengatur teks mengambil 55% ruang */
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-}
+        .product-info {
+            flex: 1 1 55%;
+            /* Mengatur teks mengambil 55% ruang */
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+        }
 
-.product-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #444;
-}
+        .product-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
 
-.product-info p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-}
+        .product-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
 
-.product-info .product-price {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #e85d04;
-}
+        .product-info .product-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e85d04;
+        }
 
-.product-info .order-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: white;
-    background: #13570d;
-    text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .product-info .order-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 5px 5px;
+            font-size: 1.2rem;
+            color: white;
+            background: #13570d;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100px;
+            height: 35px;
+            text-align: center;
+        }
 
-.product-info .order-btn:hover {
-    background: #0369a1;
-}
+        .product-info .order-btn:hover {
+            background: #c9994c;
+        }
 
-.back-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #000000;
-    background-color: #ddd;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #000000;
+            background-color: #ddd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-.back-btn:hover {
-    background-color: #ffffff;
-}
+        .back-btn:hover {
+            background-color: #ffffff;
+        }
 
-/* Media Queries for smaller screens, such as tablets */
-@media (max-width: 768px) {
-    .product-detail {
-        flex-direction: column; /* Susun gambar dan teks vertikal */
-    }
+        /* Media Queries for smaller screens, such as tablets */
+        @media (max-width: 768px) {
+            .product-detail {
+                flex-direction: column;
+                /* Susun gambar dan teks vertikal */
+            }
 
-    .product-image {
-        flex: 1 1 100%;
-    }
+            .product-image {
+                flex: 1 1 100%;
+            }
 
-    .product-info {
-        flex: 1 1 100%;
-        max-width: 100%;
-        padding: 0;
-    }
-}
+            .product-info {
+                flex: 1 1 100%;
+                max-width: 100%;
+                padding: 0;
+            }
+        }
 
-/* Media Queries for smaller screens, such as mobile */
-@media (max-width: 480px) {
-    .product-detail {
-        flex-direction: column; /* Susun vertikal untuk layar lebih kecil */
-    }
+        /* Media Queries for smaller screens, such as mobile */
+        @media (max-width: 480px) {
+            .product-detail {
+                flex-direction: column;
+                /* Susun vertikal untuk layar lebih kecil */
+            }
 
-    .product-image img {
-        max-width: 100%;
-    }
+            .product-image img {
+                max-width: 100%;
+            }
 
-    .product-info {
-        padding: 10px;
-    }
-}
-
-  </style>
+            .product-info {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
-        <span class="instagram"><a href="http://www.instagram.com/logic_coffeee"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
+        <span class="instagram"><a href="http://www.instagram.com/logic_coffeee"><i class="fa-brands fa-instagram"></i>
+                Instagram</a></span>
         <span class="openhour"><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span>
-        <span class="address"><a href="https://g.co/kgs/3VB5ztr"><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi</a></span>
+        <span class="address"><a href="https://g.co/kgs/3VB5ztr"><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih
+                No. 54,
+                Sarijadi</a></span>
     </div>
-   
+
+    <!-- Top Bar Responsive Mode -->
+    <div class="top-bar-responsive">
+        <span class="address"><a href="https://g.co/kgs/3VB5ztr"><i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih
+                No. 54</a></span>
+        <span class="openhour"><a><i class="fa-solid fa-clock"></i> Buka Jam 08.00 - 18.00</a></span>
+    </div>
+
     <!-- Main Header -->
     <header class="header">
         <div class="navbar">
-          <div class="brand">
-            <img
-              src="./bg/logo logic(1).png"
-              alt="Brand Logo"
-              class="brand-logo"
-            />
-            <h1 class="brand-name" data-jscroot="fade-in">Logic Coffee</h1>
-          </div>
-    
-          <div class="search-bar">
-    <input type="text" placeholder="Cari di halaman ini..." id="search-input" />
-    <button class="search-button" onclick="searchProducts()">Cari</button>
-    </div>
-    
-        
-          <nav class="nav-links">
-            <a href="index.html"><i class="fa fa-house"></i> Beranda</a>
-            <a href="#menu"><i class="fa fa-mug-hot"></i> Menu</a>
-            <a href="tentang.html"><i class="fa-solid fa-info-circle"></i> Tentang Kami</a>
-            <a href="https://logiccoffee.id.biz.id/kontak/"><i class="fa-solid fa-phone"></i>Kontak</a>
-            <a href="http://logiccoffee.id.biz.id/login/" class="btn-login">
-                <i class="fa-solid fa-user"></i> Login
-            </a>
-            
-          </nav>
-    
-          <!-- Profile and Cart -->
-          <!-- <div class="user-cart">
+            <div class="brand">
+                <img src="./bg/logo logic(1).png" alt="Brand Logo" class="brand-logo" />
+                <h1 class="brand-name" data-jscroot="fade-in">Logic Coffee</h1>
+            </div>
+
+            <!-- Searchbar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Cari di halaman ini..." id="search-input" />
+                <button class="search-button" onclick="searchProducts()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+
+            <div class="hamburger" onclick="toggleMenu()" style="display: none;">☰</div>
+
+            <nav class="nav-links">
+                <a href="index.html"><i class="fa fa-house"></i> Beranda</a>
+                <a href="#menu"><i class="fa fa-mug-hot"></i> Menu</a>
+                <a href="tentang.html"><i class="fa-solid fa-info-circle"></i> Tentang Kami</a>
+                <a href="https://logiccoffee.id.biz.id/kontak/"><i class="fa-solid fa-phone"></i> Kontak</a>
+                <a href="http://logiccoffee.id.biz.id/login/" class="btn-login">
+                    <i class="fa-solid fa-user"></i> Login
+                </a>
+            </nav>
+
+
+
+            <!-- Profile and Cart -->
+            <!-- <div class="user-cart">
             <span class="cart-icon">&#128722;<span class="cart-count">0</span></span>
             <span class="profile">Nama Pengguna &#9662;</span>
         </div> -->
         </div>
-      </header>
+    </header>
     <div class="container">
         <!-- <a href="index.html" class="back-btn">← Back to Menu</a> -->
         <div class="product-detail">
@@ -203,31 +229,49 @@
     </div>
     <footer class="site-footer" id="kontak">
         <div class="footer-content">
-          <p class="footer-intro">Kenali lebih dekat dan temui kami di</p>
-          <div class="footer-links">
-              <span class="about searchable">
-                  <a href="">
-                      <i class="fa-solid fa-info-circle"></i> Tentang
-                  </a>
-              </span>
-              <span class="contact searchable">
-                  <a href="https://logiccoffee.id.biz.id/kontak/">
-                      <i class="fa-solid fa-phone"></i> Kontak
-                  </a>
-              </span>
-              <span class="instagram searchable">
-                  <a href="http://www.instagram.com/logic_coffeee">
-                      <i class="fa-brands fa-instagram"></i> Instagram
-                  </a>
-              </span>
-              <span class="address searchable">
-                  <a href="https://g.co/kgs/3VB5ztr">
-                      <i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi
-                  </a>
-              </span>
-          </div>
-          <p>Logic Coffee &copy; 2024 All rights reserved.</p>
+            <p class="footer-intro">Kenali lebih dekat dan temui kami di</p>
+            <div class="footer-links">
+                <span class="about searchable">
+                    <a href="">
+                        <i class="fa-solid fa-info-circle"></i> Tentang
+                    </a>
+                </span>
+                <span class="contact searchable">
+                    <a href="https://logiccoffee.id.biz.id/kontak/">
+                        <i class="fa-solid fa-phone"></i> Kontak
+                    </a>
+                </span>
+                <span class="instagram searchable">
+                    <a href="http://www.instagram.com/logic_coffeee">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </span>
+                <span class="address searchable">
+                    <a href="https://g.co/kgs/3VB5ztr">
+                        <i class="fa-solid fa-map-marker-alt"></i> Jl. Sariasih No. 54, Sarijadi
+                    </a>
+                </span>
+            </div>
+            <p>Logic Coffee &copy; 2024 All rights reserved.</p>
         </div>
-        </footer>
+    </footer>
+
+    <script>
+        // Ambil elemen hamburger dan nav-links
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const searchBar = document.querySelector('.search-bar');
+
+            navLinks.classList.toggle('active');
+
+            if (window.innerWidth <= 768) {
+                const searchBarInNav = navLinks.querySelector('.search-bar');
+                if (!searchBarInNav) {
+                    navLinks.prepend(searchBar); // Pindahkan search bar ke dalam menu pop-up
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>
